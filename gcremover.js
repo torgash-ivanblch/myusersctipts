@@ -19,6 +19,7 @@
     var matches = document.querySelectorAll('[data-col-seq="0"]');
       for(var i = 0; i < matches.length; i++) {
           var userid = matches[i].innerHTML;
-        matches[i].innerHTML = '<a href="/user/control/user/delete/id/' + userid + '"><img style="height:32px;width:32px;" src="https://fs.getcourse.ru/fileservice/file/download/a/744/sc/189/h/c4a8c4f7226d570d2afe4313cf6444e2.png"></a>' + userid;
+        matches[i].innerHTML = '<a class="btn btn-danger btn-sm"name="delete_user_button" href="/user/control/user/delete/id/' + userid + '">DEL</a>' + userid;
+
       }
 })();
