@@ -7,7 +7,9 @@
 // PLACE YOUR DOMAIN HERE
 // ЗАМЕНИТЕ YOUR_DOMAIN на ваш домен на GetCourse
 // @match        https://YOUR_DOMAIN/pl/user/user
-// @match        https://YOUR_DOMAIN/pl/user/user/index
+// @match        https://YOUR_DOMAIN/pl/user/user/index?*
+// @match        http://YOUR_DOMAIN/pl/user/user
+// @match        http://YOUR_DOMAIN/pl/user/user/index?*
 // @grant        none
 // ==/UserScript==
 
