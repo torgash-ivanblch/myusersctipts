@@ -31,12 +31,12 @@
         var matches = document.querySelectorAll('[data-col-seq="0"]');
         for(var i = 1; i < matches.length; i++) {
             var userid = matches[i].innerHTML;
-            matches[i].innerHTML = '<a class="btn btn-danger btn-sm"name="delete_user_button" href="/user/control/user/delete/id/' + userid + '">DEL</a>' + userid;
+            matches[i].innerHTML = '<a class="btn btn-danger btn-sm" name="delete_user_button" href="/user/control/user/delete/id/' + userid + '">DEL</a>' + userid;
 
         // This opens first element in the table to delete the user.
             if(i == 1 && auto) {
 
-                var TargetLink = document.getElementsByName("delete_user_button")[1];
+                var TargetLink = document.getElementsByName("delete_user_button")[0];
 
 
                 if (TargetLink.href){
